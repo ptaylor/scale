@@ -1,0 +1,2 @@
+#!/bin/sh
+curl --verbose --data '{"minTime": 1000, "maxTime": 2000, "dataSize": 2097152}' -X POST http://localhost:5000/request
