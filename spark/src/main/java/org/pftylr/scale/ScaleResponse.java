@@ -2,8 +2,8 @@ package org.pftylr.scale;
 
 public class ScaleResponse {
 
-    boolean status;
-    long time;
+    private boolean status;
+    private long time;
 
     public ScaleResponse() {
     }

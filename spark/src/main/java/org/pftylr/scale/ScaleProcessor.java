@@ -47,18 +47,42 @@ public class ScaleProcessor {
 
 	debug("request: " + request);
 
-	long time = rng.nextInt(request.maxTime - request.minTime) + request.minTime;
-	try {
-	    debug("sleeping: " + time);
-	    Thread.sleep(time);
-	} catch (InterruptedException e) {
-	    // Ignore
-	}
+	processData(request);
+	processDelay(request);
 
 	ScaleResponse response = new ScaleResponse();
 	response.setStatus(true);
 	
 	return response;
+    }
+
+    private void processDelay(ScaleRequest request) {
+	long time = randomBetween(request.getMinTime(), request.getMaxTime());
+        debug("processDelay: " + time);
+
+	try {
+	    Thread.sleep(time);
+	} catch (InterruptedException e) {
+	    // Ignore
+	}
+    }
+
+    private void processData(ScaleRequest request) {
+
+	long size = randomBetween(request.getMinDataSize(), request.getMaxDataSize());
+    	
+	debug("processData: " + size);
+
+	byte[] bytes = new byte[(int)size];
+	rng.nextBytes(bytes);
+    }
+    
+    private long randomBetween(long min, long max) {
+	long b = 0;
+	if (min != max) {
+	    b = Math.abs(rng.nextLong()) % (max - min);
+	}
+	return b + min;		
     }
 	
 

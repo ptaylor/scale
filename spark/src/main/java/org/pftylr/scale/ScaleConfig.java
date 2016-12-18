@@ -31,7 +31,6 @@ public class ScaleConfig {
 	    
 	    
 	    if (cmd.hasOption("p")) {
-		System.out.println("XX " + cmd.getOptionValue("p"));
 		port = Integer.parseInt(cmd.getOptionValue("p").trim());
 	    }
 	    
