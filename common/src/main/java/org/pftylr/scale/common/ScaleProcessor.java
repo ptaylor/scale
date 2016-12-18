@@ -1,9 +1,9 @@
-package org.pftylr.scale;
+package org.pftylr.scale.common;
 
 import java.util.Random;
 import java.util.Date;
 import com.google.gson.Gson;
-import static org.pftylr.scale.ScaleLogging.*;
+import static org.pftylr.scale.common.ScaleLogging.*;
 
 public class ScaleProcessor {
 

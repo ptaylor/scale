@@ -1,4 +1,4 @@
-package org.pftylr.scale;
+package org.pftylr.scale.common;
 
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
@@ -7,7 +7,7 @@ import org.apache.commons.cli.Parser;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.GnuParser;
 
-import static org.pftylr.scale.ScaleLogging.*;
+import static org.pftylr.scale.common.ScaleLogging.*;
 
 public class ScaleConfig {
 

@@ -1,8 +1,8 @@
 package org.pftylr.scale.spark;
 
-import org.pftylr.scale.ScaleConfig;
-import org.pftylr.scale.ScaleProcessor;
-import static org.pftylr.scale.ScaleLogging.*;
+import org.pftylr.scale.common.ScaleConfig;
+import org.pftylr.scale.common.ScaleProcessor;
+import static org.pftylr.scale.common.ScaleLogging.*;
 import static spark.Spark.*;
 
 public class SparkServer {

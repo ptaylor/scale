@@ -1,4 +1,4 @@
-package org.pftylr.scale;
+package org.pftylr.scale.common;
 
 public class ScaleLogging {
 
