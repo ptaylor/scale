@@ -7,7 +7,7 @@ public class ScaleCPULoad {
     Double factor;
     
     public ScaleCPULoad() {
-	factor = findAverageFactor(10000000, 50);
+	factor = findAverageFactor(10000000, 100);
     }
     
     public void load(long t) {

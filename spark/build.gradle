@@ -1,6 +1,8 @@
 plugins {
     id 'java'
     id 'application'
+    id 'eclipse'
+    id 'idea'
 }
 
 mainClassName = 'org.pftylr.scale.spark.SparkScale'
