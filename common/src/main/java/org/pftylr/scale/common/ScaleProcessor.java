@@ -57,14 +57,11 @@ public class ScaleProcessor {
     }
 
     private void processDelay(ScaleRequest request) {
+
 	long time = randomBetween(request.getMinTime(), request.getMaxTime());
         debug("processDelay: " + time);
 
-	try {
-	    Thread.sleep(time);
-	} catch (InterruptedException e) {
-	    // Ignore
-	}
+		config.getHandler().sleep(time);
     }
 
     private void processData(ScaleRequest request) {

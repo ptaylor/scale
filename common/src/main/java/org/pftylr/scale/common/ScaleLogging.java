@@ -2,7 +2,7 @@ package org.pftylr.scale.common;
 
 public class ScaleLogging {
 
-    private static boolean debugEnabled = true;
+    private static boolean debugEnabled = false;
 
     public static void info(String msg) {
 	
