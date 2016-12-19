@@ -24,6 +24,7 @@ task sparkServer(type: JavaExec) {
   classpath sourceSets.main.runtimeClasspath
   main = 'org.pftylr.scale.spark.SparkServer'
   args '--debug', '--port=5000'
+  applicationDefaultJvmArgs = ["-Dcom.sun.management.jmxremote"]
 }
 
 
